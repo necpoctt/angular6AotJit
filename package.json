@@ -1,0 +1,49 @@
+{
+  "name": "test",
+  "license": "MIT",
+  "scripts": {
+    "buildaot": "rimraf .build/aot && webpack --config webpack-aot.config.js",
+    "buildjit": "rimraf .build/jit && webpack --config webpack-jit.config.js",
+    "startjit": "./node_modules/.bin/live-server ./.build/jit --port=2020",
+    "startaot": "./node_modules/.bin/live-server ./.build/aot --port=2021",
+    "generate-aot": "./node_modules/.bin/ngc -p tsconfig-aot.json"
+  },
+  "dependencies": {
+    "@angular/animations": "6.0.3",
+    "@angular/common": "6.0.3",
+    "@angular/compiler": "6.0.3",
+    "@angular/compiler-cli": "6.0.3",
+    "@angular/core": "6.0.3",
+    "@angular/http": "6.0.3",
+    "@angular/platform-browser": "6.0.3",
+    "@angular/platform-browser-dynamic": "6.0.3",
+    "@angular/platform-server": "6.0.3",
+    "@angular/router": "6.0.3",
+    "core-js": "2.5.7",
+    "rxjs": "6.2.0",
+    "zone.js": "0.8.26"
+  },
+  "devDependencies": {
+    "@ngtools/webpack": "6.0.4",
+    "@types/jasmine": "2.5.52",
+    "@types/node": "8.0.52",
+    "@types/webpack": "3.8.1",
+    "angular-router-loader": "0.8.0",
+    "angular2-template-loader": "0.6.2",
+    "awesome-typescript-loader": "3.1.3",
+    "copy-webpack-plugin": "4.5.1",
+    "css-loader": "0.28.4",
+    "extract-text-webpack-plugin": "3.0.2",
+    "html-loader": "0.5.1",
+    "live-server": "1.2.0",
+    "node-sass": "4.9.0",
+    "performance-now": "2.1.0",
+    "raw-loader": "0.5.1",
+    "rimraf": "2.6.2",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.19.0",
+    "typescript": "2.7.2",
+    "webpack": "4.10.2",
+    "webpack-cli": "3.0.3"
+  }
+}
