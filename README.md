@@ -1,4 +1,4 @@
-# angular6-aot-jit
+# angular6AotJit
 
 ### Steps to build JIT code
  1. `npm install`
